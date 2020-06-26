@@ -26,6 +26,11 @@ namespace Zadatak_1
         {
             //invoking method for writing colors to file
             WriteColorsToFile();
+            //creating instance of class Computer
+            Computer computer = new Computer();
+            //invoking method for creating threads
+            computer.Create();
+            Console.ReadLine();
         }
     }
 }
