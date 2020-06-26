@@ -13,10 +13,10 @@ namespace Zadatak_1
     class Computer
     {
         public Document document { get; set; }
-        static Printer printer = new Printer();
 
         public void Create()
         {
+            Printer printer = new Printer();
             Thread[] threadsForComputers = new Thread[10];
             for (int i = 0; i < threadsForComputers.Length; i++)
             {
